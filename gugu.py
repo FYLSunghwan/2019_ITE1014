@@ -2,8 +2,10 @@ cnt=9
 while(cnt):
 	print("Input Dan.")
 	dan=input()
-	print("**********"+dan+"dan**********")
+	ch=''
+	ch=ch+"**********"+str(dan)+"dan**********\n"
 	for i in range(1,10):
-		print(dan,"*",i,"=",dan*i)
-	print("*************************")
+		ch=ch+str(dan)+'*'+str(i)+'='+str(dan*i)+'\n'
+	ch=ch+"*************************\n"
 	cnt=cnt-1;
+	print(ch)
