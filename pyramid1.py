@@ -1,9 +1,11 @@
 i=0
 while(i<5):
+	ch=''
 	i=i+1
 	j=5-i
 	while(j):
 		j=j-1
-		print(' ', end="")
+		ch=ch+' '
 
-	print("*"*(i*2-1))
+	ch=ch+"*"*(i*2-1)
+	print(ch)
