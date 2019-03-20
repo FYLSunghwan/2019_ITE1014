@@ -1,15 +1,15 @@
-import random
-import time
 i=0
-print("*******START*******")
-while(i<3):
-	i+=1
-	a=random.randint(0,9)
-	b=random.randint(0,9)
-	print(a,'*',b,'=','?')
-	ans=int(input())
-	if(ans==a*b):
-		print("Correct Answer")
-	else:
-		time.sleep(5)
-		print("Wrong Answer,",a,"*",b,"=",a*b)
+n=int(input())
+while(i<n):
+	ch=''
+	i=i+1
+	j=5-i
+	while(j):
+		j=j-1
+		ch=ch+' '
+	j=1
+	while(j<=2*i-1):
+		if(j==1 or j==2*i-1 or i==n): ch=ch+'*'
+		else: ch=ch+' ' 
+		j=j+1
+	print(ch)
