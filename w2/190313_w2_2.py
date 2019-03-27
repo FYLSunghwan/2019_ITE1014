@@ -1,8 +1,9 @@
 i=0
-while(i<5):
+n=input()
+while(i<n):
 	ch=''
 	i=i+1
-	j=5-i
+	j=n-i
 	while(j):
 		j=j-1
 		ch=ch+' '
