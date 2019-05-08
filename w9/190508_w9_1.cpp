@@ -17,7 +17,7 @@ int main() {
          else if(k>r) printf("Your guess is to high.\n");
          else {
              printf("Good Job,%s! You guessed my number in %d guesses!\n",str,cnt);
-
+             break;
          }
      }
 }
